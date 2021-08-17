@@ -1,0 +1,183 @@
+<html>
+<head>
+<link rel="stylesheet" href="stile.css">
+</head>
+<title> Sistemi  </title>
+<body>
+<center><h3>IL BIOS</h3></center>
+<br>
+<hr size="4 px" color="#000000"  width="100%"/>
+<br>
+<p><b>E’ un programma incorporato nei computer che risiede su un chip della <br>
+  scheda madre,gestisce l’avvio del sistema operativo all’accensione del computer.</b></p><br>
+
+<br>
+<br>
+<br>
+
+
+ <ul>
+
+ <li><p><b> Post</b> <br><br>
+   Quando si accende il computer, il BIOS si avvia ed esegue prima di tutto un test <br>
+   per verificare che tutte le componenti hardware del tuo computer <br>
+   (gli hard disks interni, la scheda audio, la scheda video, la tastiera etc) siano connesse e funzionino correttamente.<br>
+</p></li>
+
+
+<p>Se il test è positivo e non ci sono problemi, il BIOS carica il bootloader,<br> 
+  la procedura di ricerca e di avvio del sistema operativo<br>
+Il bootloader, una volta individuato il tuo sistema operativo carica il sistema<br>
+ e nel giro di poco si vedrà la schermata di login a Windows (o il tuo desktop).<br>
+  </p>
+
+  <li><p><b>Accesso al bios <br></b>
+    <p>Per accedere al bios basta riavviare il computer e, non appena compare la schermata<br>
+       di accensione del PC,premere ripetutamente il tasto necessario o la giusta <br>
+       combinazione di tasti per accedere al BIOS<br>
+      </p>
+
+              <center><img src="bios1.png" ></center><br>
+
+              <center><img src="bios2.jpg" width="50%" height="35%"></center><br>
+
+
+<li><p><b> I comandi di Linux: </b> </p> <br>
+        <p>
+1) ls<br>
+Serve a visualizzare il contenuto di una directory;<br>
+<video width="450" height="300" controls>
+    <source src="video1.mp4" type="video/mp4">
+</video><br>
+
+2) cd<br>
+Serve a spostarsi da una directory ad un’altra;<br>
+<video width="450" height="300" controls>
+    <source src="video2.mp4" type="video/mp4">
+</video><br>
+
+3) mkdir<br>
+Serve a creare una directory/cartella;<br>
+<video width="450" height="300" controls><br>
+    <source src="video3.mp4" type="video/mp4">
+</video><br>
+<br>4)rmdir<br>
+Serve a eliminare una directory/cartella;<br>
+<video width="450" height="300" controls>
+    <source src="video4.mp4" type="video/mp4">
+</video><br>
+5) >*nome*<br>
+Serve a creare un file;<br>
+<video width="450" height="300" controls>
+    <source src="video5.mp4" type="video/mp4">
+</video><br>
+<br>
+6) rm<br>
+Serve a eliminare un file;<br>
+<video width="450" height="300" controls>
+    <source src="video6.mp4" type="video/mp4">
+</video><br>
+7) gedit<br>
+Serve a modificare un file(testo);<br>
+<video width="450" height="300" controls>
+    <source src="7.mp4" type="video/mp4">
+</video><br>
+8) sudo mv *nome* -t *destinazione*<br>
+Serve a spostare una directory/cartella o un file in una diversa directory;<br>
+
+9) sudo mv *nome* -t *nuovo nome*<br>
+Serve a rinominare le directory/cartelle e i file;</p><br>
+   <br>
+   <br>
+
+
+
+</li>
+<li>  <p><b> I comandi di windows:</b> </p> <br>
+  <p>1) chiper <br>
+Serve a sovrascrivere lo spazio disco libero in Windows in modo che i file cancellati col cestino non siano più recuperabili. <br>
+Es.: <br>
+"cipher /w:c" - pulisce l'unità disco C. <br>
+<video width="450" height="300" controls>
+    <source src="video11.mp4" type="video/mp4">
+</video><br>
+2) driverquery <br>
+Serve a fare la lista dei driver del computer con tutti i dettagli. <br>
+<video width="450" height="300" controls>
+    <source src="video12.mp4" type="video/mp4">
+</video><br>
+3) shutdown <br>
+Questo comando spegne il computer. <br>
+Il comando “shutdown /r /o”, invece riavvia il PC e lancia il menu di opzioni avanzate di avvio  <br>
+per accedere alla modalità provvisoria e all'utilità di recupero. <br>
+<br>
+<br>
+4) sfc
+(System File Checker) serve a fare il controllo dei file di sistema per correggere errori di file non trovati o corrotti. <br>
+“sfc /scannow” - serve a rilevare file danneggiati o mancanti e sostituirli con file buoni. <br>
+<video width="450" height="300" controls>
+    <source src="video13.mp4" type="video/mp4">
+</video><br>
+<br>
+<br>
+5) tasklist’
+Questo comando serve a vedere l'elenco aggiornato di tutte le attività in esecuzione sul PC. <br>
+Es.:
+“tasklist-svc” - mostra i servizi relativi a ciascuna attività. <br>
+“tasklist-v” - fornisce maggiori dettagli su ogni processo. <br>
+“tasklist-m” - individua i file dll con processi attivi. <br>
+Questi comandi sono utili per la risoluzione avanzata dei problemi o per rintracciare manualmente malware. <br>
+<video width="450" height="300" controls>
+    <source src="video14_1.mp4" type="video/mp4">
+</video><br>
+<br>
+6) ipconfig
+ È il comando per sapere quale indirizzo IP ha il computer collegato in rete.  <br>
+ Se si usa un router si troverà l'indirizzo di rete locale del router. <br>
+Es.:
+“ipconfig /release” seguito da “ipconfig /renew” - per chiedere un nuovo indirizzo IP, utile per ripristinare internet. <br>
+“ipconfig /flushdns” - per aggiornare la risoluzione dei nomi DNS. <br>
+“ipconfig /all” - mostra tutti gli indirizzi di rete del computer. <br>
+<br>
+<br>
+7) netstat
+“netstat-an” - si ottiene la lista delle porte di rete aperte con i relativi indirizzi IP. <br>
+Utile per cercare e risolvere problemi di malware o collegamenti a Internet dei software. <br>
+<video width="450" height="300" controls>
+    <source src="video17.mp4" type="video/mp4">
+</video><br>
+<br>
+8) ping
+Questo comando serve a controllare se il computer è connesso a Internet o se riesce a collegarsi a un dispositivo di rete. <br>
+Oppure “ping indirizzo ip” del router per verificare se c'è collegamento della rete LAN. <br>
+<video width="450" height="300" controls>
+    <source src="video18.mp4" type="video/mp4">
+</video><br>
+<br>
+<br>
+9) powercfg
+È un comando per la gestione dell'energia. È utile a verificare eventuali anomalie di sistema che possono aumentare il consumo di energia. <br>
+Es.: <br>
+"powercfg /hibernate on" e “powercfg /hibernate off” - per gestire la modalità di ibernazione. <br>
+"powercfg /a" - per visualizzare gli stati di risparmio energetico. <br>
+“powercfg /devicequery s1_supported” - per vedere la lista di dispositivi che possono  <br>
+risvegliare il computer dallo stato di sospensione. <br>
+“Powercfg /lastwake” - dice qual è l'ultimo dispositivo che ha svegliato il PC da uno stato di sospensione. <br>
+“powercfg /energy” può essere usato per avere una relazione sul consumo di energia del PC. <br>
+</p>
+<video width="450" height="300" controls>
+    <source src="video19.mp4" type="video/mp4">
+</video><br></li>
+
+
+</ul>
+
+
+
+<br>
+<br>
+<center><a href="sito.html" target="_self"><img src="casa.png"width="100" height="100" /></a> </center>
+<
+</body>
+
+</html>

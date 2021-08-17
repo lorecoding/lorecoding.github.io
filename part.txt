@@ -1,0 +1,51 @@
+Una partizione è un area del disco composta da settori contigui. Distinguiamo 3 tipi di partizione
+
+partizione primaria
+può contenere il programma di caricamento (loader) di un sistema operativo
+il loader si trova in un settore (il primo) della partizione chiamato boot sector
+può contenere anche dati
+partizione estesa
+è un contenitore di partizioni chiamate partizioni logiche
+non contiene dati
+partizione logica (o partizione dati)
+generalmente contiene dati
+può contenere  il  Loader di  Linux o Windows, sistemi che possono essere avviati anche da partizioni logiche
+Ogni partizione logica può ospitare un diverso sistema operativo
+Per creare una o più partizioni logiche si deve prima creare una partizione estesa che le contenga
+
+Una partizione primaria è attiva se è quella in cui  il BIOS cerca il programma di bootstrap.
+
+In un HD
+
+non si possono creare più di 4 partizioni siano esse primarie o estese
+almeno una di queste deve essere una partizione primaria
+Deve esistere una partizione primaria contrassegnata come attiva
+Una partizione primaria non attiva è nascoste, cioè non è visibile da altre partizioni primarie. Ciò impedisce l'accesso ai dati ai sistemi operativi istallati nelle altre partizioni primarie.
+
+
+
+Le partizioni vengono identificate diversamente in Windows e in Linux.
+
+In Windows le partizioni (visibili) vengono identificate con le lettere dell'alfabeto a partire da C fino a Z senza nessun riferimento alle varie unità primarie o secondarie.
+
+In Linux vengono identificate dal nome dell'unità, per es. hda seguita da un numero a partire da 1. Per le partizioni primarie o estese  la numerazione va da 1 a 4. Per le partizioni dati la numerazione inizia con 5
+
+Per es. se abbiamo una sola partizione primaria e una estesa con tre partizioni dati avremo:
+
+
+
+hda1	primaria
+hda2	estesa
+hda5	dati
+hda6	dati
+hda7	dati
+
+
+Le informazioni sulle partizioni presenti in un HD si trovano in una tabella chiamata Partition Table, allocata nel Master Boot Sector (MBR), il settore 0,0,1.
+
+La tabella delle partizioni contiene per ogni partizione le seguenti informazioni:
+
+Tipo di partizione
+Indirizzo del primo settore
+Numero di settori
+Se la partizione contiene un settore di boot
